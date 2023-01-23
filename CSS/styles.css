@@ -11290,6 +11290,8 @@ textarea.form-control-lg {
   }
 }
 
+/*BODY*/
+
 body {
   padding-top: 3.375rem;
   color: #6c757d;
@@ -11330,6 +11332,7 @@ p.lead {
   font-weight: 500;
   font-size: 1.3rem;
 }
+/*NAVBAR*/
 
 #sideNav {
   padding-left: 1rem;
@@ -11407,6 +11410,8 @@ p.lead {
 .dev-icons {
   font-size: 3rem;
 }
+
+/*SECCIONES*/
 
 section.resume-section {
   display: flex;
