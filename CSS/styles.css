@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #1a6ae0e0;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -41,6 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-myblue-rgb: 30, 50, 233;
   --bs-info-rgb: 189, 93, 56;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -84,7 +85,8 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: var(--bs-gray-400);
+  /*background-image: url("IMG/fondo.jpg");*/
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -241,7 +243,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #974a2d;
+  color: #0dcaf0;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7719,7 +7721,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-myblue-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {
@@ -11421,9 +11423,11 @@ section.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+  
 }
 section.resume-section .resume-section-content {
   width: 100%;
+  
 }
 
 @media (min-width: 768px) {
