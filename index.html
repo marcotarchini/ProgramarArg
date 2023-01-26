@@ -7,7 +7,7 @@
 
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="CSS/styles.css" rel="stylesheet" />
     <title>Messi Diego CV</title>
 </head>
 <body id="page-top">
@@ -24,23 +24,20 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educación</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#languages">Idiomas</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- CONTENIDO-->
     <div class="container-fluid p-0">
-        <!-- APTITUDES-->
+                <!-- APTITUDES-->
         <section class="resume-section" id="about">
             <div class="resume-section-content">
                 <h1 class="mb-0">
                     Diego
                     <span class="text-primary">Messi</span>
                 </h1>
-                <div class="subheading mb-4">
-                    Dirección: El gaucho 333 · Sierra de la Ventana · (011) 1234-5678 ·
-                    <a href="mailto:ricardo@email.com">futbol@email.com</a>
-                </div>
                 <p class="lead mb-5">Me especializo en asesoría técnica y asistencia en el mantenimiento de sistemas
                     informáticos. He trabajado con empresas que integran una plantilla de más de
                     500 empleados. Quiero brindar la misma calidad en su compañía y optimizar el
@@ -137,6 +134,7 @@
                     </ul>
             </div>        
         </section>
+        <hr class="m-0" />
             <!-- IDIOMAS-->
             
         <section class="resume-section" id="languages">
@@ -151,14 +149,41 @@
                         <span class="fa-li"><i class="fas fa-language text-warning"></i></span>
                         Ingles: Técnico
                     </li> 
+                    <li></li>
+                        <span class="fa-li"><i class="fas fa-language text-warning"></i></span>
+                        Frances: Técnico
+                    </li> 
                 </ul>
             </div>
-            
         </section>
-        
+        <hr class="m-0" />
+        <!-- CONTACTO-->
+
+        <section class="resume-section" id="contact">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Contacto</h2>
+                    <div class="subheading mb-4">
+                        Dirección: El gaucho 333 · Sierra de la Ventana · (011) 1234-5678 ·
+                        <a href="mailto:futbol@email.com">futbol@email.com</a>
+                    </div>
+                    <form id="form" action="" class="form">
+                        <div class="mb-3"><label for="name">Nombre Completo <span>*</span></label>
+                        <input class="form-control" name="name" required type="text" id="name" placeholder="Nombre"></div>
+
+                        <div class="mb-3"><label for="email">Correo electrónico <span>*</span></label>
+                        <input class="form-control" name="email" type="text" id="email" required placeholder="nombre@mail.com"></div>
+
+                        <div class="mb-3"><label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" cols="40" rows="5"></textarea></div>
+
+                        <button type="submit" class="btn btn-danger mb-3">Enviar</button>
+                    </form>
+
+            </div>
+        </section>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="JS/scripts.js"></script>
 </body>
 </html>
