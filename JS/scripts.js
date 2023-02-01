@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
+
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
@@ -28,21 +29,23 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-});
+    
+}); 
 
-let table =[
-    {name:"Juan", email:"juan@mail.com", message:"Hola"}
-]; 
+window.onload 
+    
+    let table =[
+        {name:"Juan", email:"juan@mail.com", message:"Hola"}]; 
 
-window.onload = pushEvents;
-
-    function pushEvents(){
+    function pushUser(){
         document.getElementById("form").addEventListener("submit", newData, false);
+    }
+    function showUsers(){    
         document.getElementById("get-table").addEventListener("click", getTable, false);
     }
 
-    function newData(e){
-        e.preventDefault();
+    function newData(event){
+        event.preventDefault();
 
         let userName = document.getElementById("name").value;
         let userMail = document.getElementById("email").value;
@@ -68,6 +71,9 @@ window.onload = pushEvents;
        //"<tr><td>Juan</td><td>juan@mail.com</td><td>hola</td></tr>"
     }
 
+    function showAdmin(){
+        document.getElementById('admin').style.display = 'block';
+    }
   
 
 

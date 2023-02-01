@@ -13,7 +13,7 @@
 <body id="page-top">
     <!--BARRA DE NAVEGACION LATERAL-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="#admin" onclick="showAdmin();">
             <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/pic.jpg" alt="..." /></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -161,7 +161,7 @@
                 <h2 class="mb-5">Contacto</h2>
                     <div class="subheading mb-4">
                         Dirección: El gaucho 333 · Sierra de la Ventana · (011) 1234-5678 ·
-                        <a href="mailto:futbol@email.com">futbol@email.com</a>
+                        <a href="mailto:futbol@email.com">diegomessi@email.com</a>
                     </div>
                     <form id="form">
                         <div class="mb-3"><label for="name">Nombre Completo <span>*</span></label>
@@ -173,7 +173,7 @@
                         <div class="mb-3"><label for="message">Mensaje</label>
                         <textarea class="form-control" id="message" name="message" cols="40" rows="5"></textarea></div>
 
-                        <input type="submit" class="btn btn-primary " value="Enviar">
+                        <input type="submit" class="btn btn-primary " onclick="pushUser();" value="Enviar">
                     </form>
             </div>
         </section>
@@ -194,7 +194,7 @@
         
                                 </tbody>
                             </table>
-                            <button id="get-table" class="btn btn-primary">Show Info</button>
+                            <button id="get-table" onclick="showUsers();" class="btn btn-primary">Show Info</button>
                         </div>
                     </div>
                 </div>
