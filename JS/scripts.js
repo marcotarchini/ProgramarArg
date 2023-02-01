@@ -36,25 +36,24 @@ window.onload
     
     let table =[
         {name:"Juan", email:"juan@mail.com", message:"Hola"}]; 
+    
+    let newUser = [];        
+    
+    let saveUser = document.getElementById("form").addEventListener('submit', newData());
+       
+    let loadUser = document.getElementById("get-table").addEventListener("click", getTable());
+   
 
-    function pushUser(){
-        document.getElementById("form").addEventListener("submit", newData, false);
-    }
-    function showUsers(){    
-        document.getElementById("get-table").addEventListener("click", getTable, false);
-    }
-
-    function newData(event){
-        event.preventDefault();
+    function newData(e){
+        e.preventDefault();
 
         let userName = document.getElementById("name").value;
         let userMail = document.getElementById("email").value;
         let userMess = document.getElementById("message").value;
 
-        let newUser = {name: userName, email: userMail, message: userMess};
-        table.push(newUser);
-
-        console.log(table);
+        newUser = {name: userName, email: userMail, message: userMess};
+        
+        localStorage.setItem("form", JSON.stringify(newUser));
     }
 
 
@@ -62,9 +61,10 @@ window.onload
         
         let bodyTable = document.getElementById("user-table");
         let allTable = "";
+        let table = JSON.parse(localStorage.getItem(newUser))
 
        for (let i=0; i < table.length; i++){
-        allTable += "<tr><td>" + table[i].name + "</td><td>" + table[i].email + "</td><td>" + table[i].message + "</td></tr>";   
+        allTable += "<tr><td>" + table.name + "</td><td>" + table.email + "</td><td>" + table.message + "</td></tr>";   
        }
 
        bodyTable.innerHTML = allTable;
