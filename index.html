@@ -163,7 +163,7 @@
                         Dirección: El gaucho 333 · Sierra de la Ventana · (011) 1234-5678 ·
                         <a href="mailto:futbol@email.com">futbol@email.com</a>
                     </div>
-                    <form id="form" action="" class="form">
+                    <form id="form">
                         <div class="mb-3"><label for="name">Nombre Completo <span>*</span></label>
                         <input class="form-control" name="name" required type="text" id="name" placeholder="Nombre"></div>
 
@@ -173,14 +173,35 @@
                         <div class="mb-3"><label for="message">Mensaje</label>
                         <textarea class="form-control" id="message" name="message" cols="40" rows="5"></textarea></div>
 
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <input type="submit" class="btn btn-primary " value="Enviar">
                     </form>
-
             </div>
         </section>
-        <!-- Bootstrap core JS-->
+        <section class="resume-section" id="admin">
+            <div class="resume-section-content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="get-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Names</th>
+                                        <th>Emails</th>
+                                        <th>Messages</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="user-table">
+        
+                                </tbody>
+                            </table>
+                            <button id="get-table" class="btn btn-primary">Show Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="JS/scripts.js"></script>
 </body>
 </html>
