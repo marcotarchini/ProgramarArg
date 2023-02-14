@@ -606,6 +606,9 @@ progress {
   width: 20%;
   vertical-align: super;
 }
+.navbar-brand {
+  width: 50%;
+}
 }
 
 .img-thumbnail {
