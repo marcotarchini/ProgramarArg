@@ -59,12 +59,14 @@ window.onload
 //inserta los datos del objeto en la tabla html
     function insertUser(addObj){
 
+        let idUser = addObj["id"];
         let nameUser = addObj["name"];
         let emailUser = addObj["email"];
         let messUser = addObj["message"];
 
         const userTableRef = document.querySelector("#table-user").insertAdjacentHTML('beforeend', 
-        `<tr> <th>${nameUser}</th> 
+        `<tr> <th>${idUser}</th>
+        <th>${nameUser}</th> 
         <th>${emailUser}</th> 
         <th>${messUser}</th> </tr>`);
     }
