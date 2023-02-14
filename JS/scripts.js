@@ -7,7 +7,7 @@
 
 window.onload
 
-//funconalidad de la barra de navegacion lateral    
+//funcionalidad de la barra de navegacion lateral    
 
     document.addEventListener('DOMContentLoaded', event => {
         const sideNav = document.body.querySelector('#sideNav');
@@ -68,7 +68,7 @@ window.onload
         <th>${emailUser}</th> 
         <th>${messUser}</th> </tr>`);
     }
-//PARA VER LA LISTA DE CONTACTOS SE DEBE HACER CLICK EN LA FOTO DE CONTACTO
+//PARA VER LA LISTA DE CONTACTOS SE DEBE HACER CLICK EN LA FOTO DEL CV
     function showAdmin(){
         document.getElementById('admin').style.display = 'block';
     }

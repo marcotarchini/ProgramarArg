@@ -601,9 +601,11 @@ progress {
   content: "— ";
 }
 
+@media only screen and (max-width: 480px) {
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 20%;
+  vertical-align: super;
+}
 }
 
 .img-thumbnail {
@@ -4071,7 +4073,7 @@ textarea.form-control-lg {
   padding-left: 0;
 }
 .navbar-nav .dropdown-menu {
-  position: static;
+  position: relative;
 }
 
 .navbar-text {
@@ -4088,7 +4090,7 @@ textarea.form-control-lg {
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
-  line-height: 1;
+ /* line-height: 1;*/
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
@@ -4109,12 +4111,12 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler-icon {
-  display: inline-block;
+  display: inline-table;
   width: 1.5em;
   height: 1.5em;
-  vertical-align: middle;
+  vertical-align: center;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: 100%;
 }
 
