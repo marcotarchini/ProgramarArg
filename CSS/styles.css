@@ -83,9 +83,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-gray-400);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -93,7 +91,7 @@ body {
 hr {
   margin: 1rem 0;
   color: inherit;
-  background-color: currentColor;
+  /*background-color: currentColor;*/
   border: 0;
   opacity: 0.25;
 }
@@ -11300,7 +11298,7 @@ textarea.form-control-lg {
 
 body {
   padding-top: 3.375rem;
-  color: #6c757d;
+  /*color: #6c757d;*/
 }
 
 @media (min-width: 992px) {
@@ -11338,17 +11336,31 @@ p.lead {
   font-weight: 500;
   font-size: 1.3rem;
 }
+
 /*NAVBAR*/
 
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
+  background-image: url(../IMG/fondoBar.jpg);
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
+  background-color: white;
+  opacity: 60%;
+  color: black;
+  border: 2px solid #0dcaf0;
+  border-radius: 100%;
+  transition-duration: 0.4s;
 }
+
+#sideNav .navbar-nav .nav-item .nav-link:hover{
+  background-color: #0dcaf0;
+  color: white;
+}
+
 #sideNav .navbar-toggler:focus {
   outline-color: #6ed4af;
 }
@@ -11363,8 +11375,9 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 15rem;
     height: 100vh;
+    
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -11374,18 +11387,18 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(30, 50, 233, 0.2);
+    border: 2px solid #0dcaf0;
   }
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
     flex-grow: 0;
-    width: 100%;
+    width: auto;
     margin-bottom: auto;
   }
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
-    width: 100%;
+    width: auto;
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
@@ -11427,7 +11440,7 @@ section.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
-  
+  background-image: url(../IMG/fondoFutbol.jpg);
 }
 section.resume-section .resume-section-content {
   width: 100%;
