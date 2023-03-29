@@ -11342,7 +11342,8 @@ p.lead {
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
-  background-image: url(../IMG/fondoBar.jpg);
+  background-color: midnightblue;
+ 
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
