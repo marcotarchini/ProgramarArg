@@ -11337,6 +11337,10 @@ p.lead {
   font-size: 1.3rem;
 }
 
+.fondo-texto {
+  backdrop-filter: blur(10px);
+}
+
 /*NAVBAR*/
 
 #sideNav {
@@ -11349,8 +11353,7 @@ p.lead {
   font-weight: 800;
   letter-spacing: 0.08rem;
   text-transform: uppercase;
-  background-color: white;
-  opacity: 60%;
+  background-color: var(--bs-cyan);
   color: black;
   border: 2px solid #0dcaf0;
   border-radius: 100%;
@@ -11358,7 +11361,7 @@ p.lead {
 }
 
 #sideNav .navbar-nav .nav-item .nav-link:hover{
-  background-color: #0dcaf0;
+  background-color: blue;
   color: white;
 }
 
